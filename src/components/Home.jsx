@@ -75,8 +75,8 @@ const Home = () => {
                                                     </div>
                                                 </div>
                                                 <div id="matchScores">
-                                                    <div>{item.home_score}</div>
-                                                    <div>{item.away_score}</div>
+                                                    <div id="matchScoresText">{item.home_score}</div>
+                                                    <div id="matchScoresText">{item.away_score}</div>
                                                 </div>
                                                 <div id="matchDetails">
                                                     <div id="watchButton"><FaTv/></div>
@@ -171,8 +171,8 @@ const Home = () => {
                                                 </div>
                                             </div>
                                             <div id="matchScores">
-                                                <div>{item.home_score}</div>
-                                                <div>{item.away_score}</div>
+                                                <div id="matchScoresText">{item.home_score}</div>
+                                                <div id="matchScoresText">{item.away_score}</div>
                                             </div>
                                             <div id="matchDetails">
                                                 <div id="watchButton"><FaTv/></div>
