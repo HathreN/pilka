@@ -7,7 +7,7 @@ function App() {
     return (
         <div className="App">
             <div>
-                <div id="logo" onClick={()=>(window.location='/')}><img src="./logo.png"/></div>
+                <header id="header"><div id="logo" onClick={()=>(window.location='/')}><img src="./logo.png"/></div></header>
                 <Router>
                     <Routes>
                         <Route path='/' element={<Home/>}/>

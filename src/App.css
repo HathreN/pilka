@@ -12,7 +12,10 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+#header{
+  background-color: #FFFFFF;
+  padding: 1%;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -322,11 +325,46 @@
 #allMatches{
   height: 80px;
   padding: 20px 10px 30px 20px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
   display: flex;
+  box-shadow: 0px 0px 22px -7px rgba(66, 68, 90, 1);
+  background-color: white;
   justify-content: flex-start;
   align-items: flex-start;
   justify-items: flex-start;
+  border: 1px solid #e0e8ee;
   margin: auto;
+}
+#currentNavigation{
+  background-color: #eeeff2;
+  width: 100%;
+  display: table;
+  clear: both;
+  height: 50px;
+  font-weight: 600;
+}
+#navigationPointer{
+  float: left;
+  margin-top: 0.5%;
+  width: 3.33%;
+  display: flex;
+  justify-content: center;
+}
+#navigationGeneral{
+  float: left;
+  width: 7.33%;
+  margin-left: 3%;
+  margin-top: 0.5%;
+  display: flex;
+  justify-content: center;
+}
+#navigationContainer{
+  color: #8c97b3;
+  width: 5.33%;
+  display: flex;
+  margin-top: 0.5%;
+  justify-content: center;
 }
 #detailsButton{
   height: 70%;
@@ -382,6 +420,15 @@
 }
 
 @media (max-width: 40em) {
+  #currentNavigation{
+    font-weight: 500;
+  }
+  #navigationGeneral{
+    width: 20.33%;
+  }
+  #navigationContainer{
+    width: 20.33%;
+  }
   #allButton{
     background-color: #1c336c;
     height: 40%;
@@ -566,7 +613,15 @@
   }
 }
 @media (min-width: 40.063em) and (max-width: 64em) {
-  .category-box h2{}
+  #currentNavigation{
+    font-weight: 500;
+  }
+  #navigationGeneral{
+    width: 14.33%;
+  }
+  #navigationContainer{
+    width: 12.33%;
+  }
   #allButton{
     background-color: #1c336c;
     height: 50%;

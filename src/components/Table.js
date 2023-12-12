@@ -23,13 +23,14 @@ const Table = () => {
     console.log(teamsData)
 
     return (
-        <div id="mainPage">
-            <div>
+        <div>
+            <div id="currentNavigation"><div id="navigationGeneral"> Piłka nożna</div><div id="navigationPointer">></div> <div id="navigationContainer">Tabela</div></div>
+            <div id="mainPage">
                 <div id="leagueName">
                     <div id="league"><img id="flag"
                                           src="https://m.media-amazon.com/images/I/41G0-4KDjbL.jpg"/><p
                         id="leagueText"> Anglia: Premier League</p></div>
-                    <div id="leagueTable" onClick={() => (window.location='/')}><p
+                    <div id="leagueTable" onClick={() => (window.location = '/')}><p
                         id="navigationButton">Mecze</p><p
                         id="navigationArrow"><FaArrowCircleRight/>
                     </p></div>
@@ -74,9 +75,18 @@ const Table = () => {
                             }
                         )}
                     <div id="tableLegend">
-                        <div id="legendSingle"><div id="legendPromotion"></div><div id="legendText">Awans - Liga Mistrzów (Runda grupowa)</div></div>
-                        <div id="legendSingle"><div id="legendPromotionEurope"></div><div id="legendText">Awans - Liga Europy (Runda grupowa)</div></div>
-                        <div id="legendSingle"><div id="legendDemotion"></div><div id="legendText">Spadek - Championship</div></div>
+                        <div id="legendSingle">
+                            <div id="legendPromotion"></div>
+                            <div id="legendText">Awans - Liga Mistrzów (Runda grupowa)</div>
+                        </div>
+                        <div id="legendSingle">
+                            <div id="legendPromotionEurope"></div>
+                            <div id="legendText">Awans - Liga Europy (Runda grupowa)</div>
+                        </div>
+                        <div id="legendSingle">
+                            <div id="legendDemotion"></div>
+                            <div id="legendText">Spadek - Championship</div>
+                        </div>
                     </div>
                 </div>
             </div>
