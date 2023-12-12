@@ -30,8 +30,8 @@ const Table = () => {
                                           src="https://m.media-amazon.com/images/I/41G0-4KDjbL.jpg"/><p
                         id="leagueText"> Anglia: Premier League</p></div>
                     <div id="leagueTable" onClick={() => (window.location='/')}><p
-                        id="detailsButtonText">Mecze</p><p
-                        id="detailsArrow"><FaArrowCircleRight/>
+                        id="navigationButton">Mecze</p><p
+                        id="navigationArrow"><FaArrowCircleRight/>
                     </p></div>
                 </div>
                 <div id="teamsTable">
@@ -48,9 +48,9 @@ const Table = () => {
                                                     {item.team.id}
                                                 </div>
                                                 <div id="singleTeamTable">
-                                                    <div id="teamCredentials">
+                                                    <div id="teamCredentialsTable">
                                                         <img id="teamImage" src={item.team.image}/>
-                                                        <p id="teamName">{item.team.name}</p>
+                                                        <div id="teamName">{item.team.name}</div>
                                                     </div>
                                                 </div>
                                                 <div id="scores">
@@ -74,9 +74,9 @@ const Table = () => {
                             }
                         )}
                     <div id="tableLegend">
-                        <div id="legendSingle"><div id="legendPromotion"></div><p>Awans - Liga Mistrzów (Runda grupowa)</p></div>
-                        <div id="legendSingle"><div id="legendPromotionEurope"></div><p>Awans - Liga Europy (Runda grupowa)</p></div>
-                        <div id="legendSingle"><div id="legendDemotion"></div><p>Spadek - Championship</p></div>
+                        <div id="legendSingle"><div id="legendPromotion"></div><div id="legendText">Awans - Liga Mistrzów (Runda grupowa)</div></div>
+                        <div id="legendSingle"><div id="legendPromotionEurope"></div><div id="legendText">Awans - Liga Europy (Runda grupowa)</div></div>
+                        <div id="legendSingle"><div id="legendDemotion"></div><div id="legendText">Spadek - Championship</div></div>
                     </div>
                 </div>
             </div>

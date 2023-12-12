@@ -96,6 +96,13 @@
   align-items: center;
   justify-content: flex-start;
 }
+#teamCredentialsTable {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin: 4% 0% 0% 0%;
+    justify-content: flex-start;
+}
 #logo{
   margin: 1%;
 }
@@ -243,6 +250,7 @@
 }
 #legendSingle{
   margin-left: 3%;
+  margin-top: 1%;
   display: flex;
   align-items: center;
   text-align: center;
@@ -253,20 +261,20 @@
   border-radius: 10px;
   width: 30px;
   height: 30px;
-  margin-right: 2%;
+  margin: 0% 2% 0% 1%;
 }
 #legendPromotionEurope{
   background-color: #c82d2d;
   width: 30px;
   border-radius: 10px;
-  margin-right: 2%;
+  margin: 0% 2% 0% 1%;
   height: 30px;
 }
 #legendDemotion{
   background-color: #ff5f5f;
   width: 30px;
   border-radius: 10px;
-  margin-right: 2%;
+  margin: 0% 2% 0% 1%;
   height: 30px;
 }
 #matchDate{
@@ -337,6 +345,12 @@
 #detailsArrow{
   color:red;
 }
+#navigationArrow{
+  color:red;
+}
+#navigationButton{
+  margin-right: 10px;
+}
 #leagueName{
   border: 1px solid #e0e8ee;
   height: 25%;
@@ -366,11 +380,370 @@
   justify-content: flex-end;
   margin: 0% 2% 0% 0%;
 }
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+@media (max-width: 40em) {
+  #allButton{
+    background-color: #1c336c;
+    height: 40%;
+    width: 30%;
+    font-size: 15px;
   }
-  to {
-    transform: rotate(360deg);
+  #flag{
+    width:120%;
+    height:40%;
+    margin-left: 20%;
+  }
+  #leagueText{
+    font-size: 12px;
+    justify-content: center;
+  }
+  #league{
+    justify-content: center;
+    display: grid;
+    align-items: center;
+    grid-auto-columns: 3fr;
+  }
+  #leagueName{
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 2fr 1fr;
+  }
+  #roundText{
+    width: 80%;
+    height: 5%;
+    padding: 0px;
+    text-align: center;
+    font-size: 15px;
+  }
+  #matchDate{
+    width:100%;
+    padding: 2px;
+    display: flex;
+    text-overflow: ellipsis;
+    font-size: 10px;
+  }
+  #teams{
+    height: 100%;
+  }
+  #team{
+    font-size: 11px;
+    font-weight: 350;
+    margin: 0;
+  }
+  #matchScores{
+    gap: 0px;
+    grid-auto-columns: unset;
+  }
+  #watchButton{
+    height: 50%;
+    width: 100%;
+  }
+  #detailsButton{
+    height: 50%;
+    width: 80%;
+    padding-right: 10px;
+    display: flex;
+  }
+  #detailsButtonText{
+    font-size: 12px;
+  }
+  #detailsArrow{
+    margin-top: 30%;
+    margin-right: 20%;
+  }
+  #navigationArrow{
+    margin-right: 5px;
+    margin-top: 18%;
+  }
+  #allMatches{
+    padding: 0px;
+  }
+  #line{
+    width: 85%;
+  }
+  #tableHeader{
+    margin: 1% auto 1% auto;
+    width: 90%;
+    height: 1%;
+    padding: 0px;
+    text-align: center;
+    font-size: 15px;
+  }
+  #singleTeam{
+    padding: 0px;
+    margin: auto;
+    gap: 4px;
+    width: 90%;
+  }
+  #matches{
+    margin: 0%;
+    justify-content: center;
+  }
+  #teamCredentials{
+  }
+  #singleTeamTable{
+    height: 50%;
+  }
+  #teamName{
+    font-weight: 600;
+    width: 80%;
+    font-size: 10px;
+    height: 40%;
+    text-overflow: clip;
+    overflow: hidden;
+  }
+  #teamTablePosition1, #teamTablePosition2, #teamTablePosition3, #teamTablePosition4{
+    height: 60%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    border-radius: 10px;
+  }
+  #teamTablePosition5{
+    height: 60%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    border-radius: 10px;
+  }
+  #teamTablePosition6{
+    height: 60%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    border-radius: 10px;;
+  }
+  #teamTablePosition7,#teamTablePosition8{
+    height: 60%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    border-radius: 10px;
+  }
+  #matches{
+    font-size: 12px;
+  }
+  #roundMatches{
+  }
+  #goals{
+    font-size: 12px;
+  }
+  #ratio{
+    font-size: 12px;
+  }
+  #points{
+    font-size: 12px;
+  }
+  #teamImage{
+    width: 40%;
+    height: 40%;
+  }
+  #headerRatio{
+    margin-right: -20%;
+  }
+  #legendPromotion, #legendPromotionEurope, #legendDemotion{
+    height: 20px;
+    margin: 2% 2% 0% 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    border-radius: 5px;
+  }
+  #legendSingle{
+    margin: 0px
+  }
+  #legendText{
+    font-size: 12px;
+  }
+}
+@media (min-width: 40.063em) and (max-width: 64em) {
+  .category-box h2{}
+  #allButton{
+    background-color: #1c336c;
+    height: 50%;
+    width: 10%;
+    font-size: 15px;
+  }
+  #flag{
+    width: 80%;
+    height: 60%;
+    margin-left: 20%;
+  }
+  #leagueText{
+    font-size: 12px;
+    justify-content: start;
+    margin-left: 4%;
+  }
+  #league{
+    justify-content: center;
+    display: grid;
+    align-items: center;
+    grid-auto-columns: 3fr;
+  }
+  #leagueName{
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 2fr 1fr;
+  }
+  #round{
+    width: 80%;
+    height: 5%;
+    padding: 0px;
+    text-align: start;
+    font-size: 15px;
+    margin: 1% auto 1% auto;
+  }
+  #roundText{
+    height: 5%;
+    padding: 1% 2% 1% 2%;
+    text-align: start;
+    font-size: 15px;
+  }
+  #matchDate{
+    width:100%;
+    padding: 2px;
+    display: flex;
+    text-overflow: ellipsis;
+    font-size: 10px;
+  }
+  #teams{
+    height: 100%;
+    align-items: center;
+  }
+  #team{
+    font-size: 11px;
+    font-weight: 350;
+    margin: 0;
+  }
+  #matchScores{
+    gap: 0px;
+    grid-auto-columns: unset;
+  }
+  #watchButton{
+    height: 50%;
+    width: 100%;
+  }
+  #detailsButton{
+    height: 50%;
+    width: 80%;
+    padding-right: 10px;
+    display: flex;
+  }
+  #detailsButtonText{
+    font-size: 12px;
+  }
+  #detailsArrow{
+    margin-top: 30%;
+    margin-right: 20%;
+  }
+  #navigationArrow{
+    margin-right: 5px;
+    margin-top: 9%;
+  }
+  #allMatches{
+    padding: 0px;
+  }
+  #line{
+    width: 99%;
+  }
+  #tableHeader{
+    margin: 1% auto 1% auto;
+    height: 1%;
+    padding: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    font-size: 15px;
+  }
+  #singleTeam{
+    gap: 4px;
+    width: 90%;
+    margin: auto;
+  }
+  #matches{
+    margin: 0%;
+    justify-content: center;
+  }
+  #teamCredentials{
+  }
+  #singleTeamTable{
+    height: 50%;
+  }
+  #teamName{
+    font-weight: 600;
+    font-size: 12px;
+    height: 40%;
+    text-overflow: clip;
+    overflow: hidden;
+  }
+  #teamTablePosition1, #teamTablePosition2, #teamTablePosition3, #teamTablePosition4, #teamTablePosition5, #teamTablePosition6, #teamTablePosition7, #teamTablePosition8 {
+    height: 60%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    border-radius: 10px;
+  }
+  #headerPosition{
+    margin-left: 0%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  #headerPoints{
+    text-align: end;
+    margin-right: 30%;
+  }
+  #headerGoals{
+    text-align: end;
+    margin-right: -7%;
+  }
+  #matches{
+    font-size: 12px;
+  }
+  #roundMatches{
+  }
+  #goals{
+    font-size: 12px;
+  }
+  #ratio{
+    font-size: 12px;
+  }
+  #points{
+    font-size: 12px;
+  }
+  #teamImage{
+    height: 40%;
+  }
+  #headerRatio{
+    margin-right: 0%;
+  }
+  #headerName{
+    margin-right: 40%;
+    padding-right: 30%;
+  }
+  #legendPromotion, #legendPromotionEurope, #legendDemotion{
+    height: 20px;
+    margin: 2% 2% 0% 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    border-radius: 5px;
+  }
+  #legendSingle{
+    margin: 0px
+  }
+  #legendText{
+    font-size: 12px;
   }
 }

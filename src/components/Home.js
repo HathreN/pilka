@@ -145,8 +145,8 @@ const Home = () => {
                                           src="https://m.media-amazon.com/images/I/41G0-4KDjbL.jpg"/><p
                         id="leagueText"> Anglia: Premier League</p></div>
                     <div id="leagueTable" onClick={() => (window.location='/table')}><p
-                        id="detailsButtonText">Tabela</p><p
-                        id="detailsArrow"><FaArrowCircleRight/>
+                        id="navigationButton">Tabela</p><p
+                        id="navigationArrow"><FaArrowCircleRight/>
                     </p></div>
                 </div>
                 {!isLoading && !renderAll && <PaginatedItems itemsPerPage={3}/>}
