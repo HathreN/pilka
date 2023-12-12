@@ -70,7 +70,8 @@
   position: relative;
 }
 .arrows{
-  color: #868788
+  color: #868788;
+  cursor: pointer;
 }
 .currentPage{
   visibility: hidden;
@@ -105,6 +106,7 @@
 }
 #logo{
   margin: 1%;
+  cursor: pointer;
 }
 #team{
   margin-left: 10px;
@@ -319,6 +321,7 @@
   align-items: center;
   justify-items: center;
   margin: auto;
+  cursor: pointer;
 }
 #allButton{
   background-color: #1c336c;
@@ -346,6 +349,7 @@
   justify-items: flex-start;
   border: 1px solid #e0e8ee;
   margin: auto;
+  cursor: pointer;
 }
 #currentNavigation{
   background-color: #eeeff2;
@@ -387,6 +391,7 @@
   justify-items: center;
   margin: auto;
   padding: 0% 10% 0% 10%;
+  cursor: pointer;
 }
 #detailsButtonText{
   margin-right: 10px;
@@ -428,6 +433,7 @@
   display: flex;
   justify-content: flex-end;
   margin: 0% 2% 0% 0%;
+  cursor: pointer;
 }
 
 @media (max-width: 40em) {
@@ -498,12 +504,14 @@
   #watchButton{
     height: 50%;
     width: 100%;
+    cursor: pointer;
   }
   #detailsButton{
     height: 50%;
     width: 80%;
     padding-right: 10px;
     display: flex;
+    cursor: pointer;
   }
   #detailsButtonText{
     font-size: 12px;
